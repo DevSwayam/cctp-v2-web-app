@@ -16,8 +16,8 @@ import { TransferTypeSelector } from '@/components/transfer-type';
 
 export default function Home() {
   const { currentStep, logs, error, executeTransfer, getBalance, reset } = useCrossChainTransfer();
-  const [sourceChain, setSourceChain] = useState<SupportedChainId>(SupportedChainId.ETH_SEPOLIA);
-  const [destinationChain, setDestinationChain] = useState<SupportedChainId>(SupportedChainId.AVAX_FUJI);
+  const [sourceChain, setSourceChain] = useState<SupportedChainId>(SupportedChainId.BASE_SEPOLIA);
+  const [destinationChain, setDestinationChain] = useState<SupportedChainId>(SupportedChainId.SEI_TESTNET);
   const [amount, setAmount] = useState('');
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [isTransferring, setIsTransferring] = useState(false);
